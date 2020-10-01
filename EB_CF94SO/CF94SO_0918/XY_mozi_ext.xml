@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mozi>
+	<film id="1" mufaj = "horror">
+		<rendezo id="2" nev = "alex"/>
+		<szinesz id="3" nev = "Madison_Ivy"/>
+		<iro id="4"/>
+		<producer id="6" nev = "Botond"/>
+		<dramaturg id="7" nev = "Ferenc"/>
+		<operator id="8" nev = "Pados Gyula"/>
+	</film
+</mozi>

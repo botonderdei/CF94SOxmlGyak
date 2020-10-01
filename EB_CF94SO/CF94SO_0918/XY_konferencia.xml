@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferenciak>
+	<konferencia>
+		<cim>Java programozas</cim>
+		<helyszin>Miskolc</helyszin>
+		<datum>2020.09.23</datum>
+		<hallgatok>
+			<hallgato>
+				<nev>Erdei Botond</nev>
+				<lakcim>Miskolc</lakcim>
+			</hallgato>
+		</hallgatok>
+		<eloado>
+			<nev>Alex</nev>
+			<adoszam>1234</adoszam>
+			<lakcim>Emod</lakcim>
+		</eloado>
+	</konferencia>
+</konferenciak>
