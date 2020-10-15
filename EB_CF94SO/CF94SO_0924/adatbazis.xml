@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE adatbazis[
+<!ELEMENT adatbazis (dolgozo)>
+<!ELEMENT dolgozo (nev,fizetes)>
+<!ATTLIST dolgozo
+ kod ID #REQUIRED
+>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT fizetes (#PCDATA)>
+]>
+<adatbazis>
+    <dolgozo id="111">
+        <nev>Botond</nev>
+        <fizetes>5000</fizetes>
+    </dolgozo>
+</adatbazis>
+

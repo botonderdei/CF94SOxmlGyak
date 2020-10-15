@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE iskola SYSTEM "iskola.dtd" >
+<iskola>
+  <tanar id="idvalue0">
+    <nev>Botond</nev>
+    <szak>Proginfo</szak>
+  </tanar>
+  <tanar id="idvalue1">
+    <nev>Rudolf</nev>
+    <szak>Proginfo</szak>
+  </tanar>
+  <tantargy id="idvalue1">
+    <tnev>Programozas</tnev>
+    <osztaly>2.</osztaly>
+  </tantargy>
+</iskola>
