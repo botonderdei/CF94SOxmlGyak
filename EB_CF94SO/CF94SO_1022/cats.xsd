@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+<xs:element name="cats" type="catsType"/>
+
+<xs:complexType name="catType">
+	<xs:sequence>
+		<xs:element type="xs:string" name="name"/>
+		<xs:element type="xs:int" name="age"/>
+		<xs:element type="xs:string" name="breed"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="id" use="required"/>
+</xs:complexType>
+	
+<xs:complexType name="catsType">
+	<xs:sequence>
+		<xs:element type="catType" name="cat" maxOccurs="unbounded" minOccurs="0"/>
+	</xs:sequence>
+</xs:complexType>
+
+</xs:schema>
