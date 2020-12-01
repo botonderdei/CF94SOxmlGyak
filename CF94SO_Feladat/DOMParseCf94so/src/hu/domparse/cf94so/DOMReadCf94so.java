@@ -22,19 +22,19 @@ public class DOMReadCf94so {
         Element root = doc.getDocumentElement();
         root.normalize();
 
-        printDocument(root, "");
+        print(root);
         
 		}catch(Exception e){
 			e.printStackTrace();
 		}
     }
 
-    public static void printDocument(Node root, String separator) {
+    public static void print(Node root) {
+    	
         String nodename = root.getNodeName();
         if (!nodename.contains("text")) {
-            System.out.println(separator + nodename);
+            System.out.println(" " + nodename);
         }
-        separator += "  ";
 
         NodeList children = root.getChildNodes();
 
@@ -43,9 +43,9 @@ public class DOMReadCf94so {
             boolean isComplex = child.getTextContent().contains("\n");
 
             if (isComplex) {
-                printDocument(child, separator);
+                print(child);
             } else {
-                System.out.print(separator + child.getNodeName());
+                System.out.print(" " + child.getNodeName());
                 System.out.println(": " + child.getTextContent());
             }
         }
