@@ -1,0 +1,130 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="nyilvantartas" type="nyilvantartasType"/>
+  
+  <xs:complexType name="filmType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="hossz"/>
+      <xs:element type="xs:string" name="cim"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="fid"/>
+  </xs:complexType>
+  <xs:complexType name="filmekType">
+    <xs:sequence>
+      <xs:element type="filmType" name="film"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="kategoriaType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="kid"/>
+  </xs:complexType>
+  <xs:complexType name="kategoriakType">
+    <xs:sequence>
+      <xs:element type="kategoriaType" name="kategoria"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="moziType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="varos"/>
+      <xs:element type="xs:string" name="nev"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="mid"/>
+  </xs:complexType>
+  <xs:complexType name="mozikType">
+    <xs:sequence>
+      <xs:element type="moziType" name="mozi"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="teremType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="szam"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="tid"/>
+    <xs:attribute type="xs:byte" name="mid"/>
+  </xs:complexType>
+  <xs:complexType name="termekType">
+    <xs:sequence>
+      <xs:element type="teremType" name="terem"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="telefonszamType">
+    <xs:sequence>
+      <xs:element type="xs:long" name="szam"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="did"/>
+  </xs:complexType>
+  <xs:complexType name="telefonszamokType">
+    <xs:sequence>
+      <xs:element type="telefonszamType" name="telefonszam"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="cimType">
+    <xs:sequence>
+      <xs:element type="xs:short" name="irsz"/>
+      <xs:element type="xs:string" name="uhsz"/>
+      <xs:element type="xs:string" name="varos"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="dolgozoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="telefonszamokType" name="telefonszamok"/>
+      <xs:element type="cimType" name="cim"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="did"/>
+    <xs:attribute type="xs:byte" name="mid"/>
+  </xs:complexType>
+  <xs:complexType name="dolgozokType">
+    <xs:sequence>
+      <xs:element type="dolgozoType" name="dolgozo"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="vetitesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="tol"/>
+      <xs:element type="xs:string" name="ig"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="fid"/>
+    <xs:attribute type="xs:byte" name="mid"/>
+  </xs:complexType>
+  <xs:complexType name="vetitesekType">
+    <xs:sequence>
+      <xs:element type="vetitesType" name="vetites"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="fkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="fid"/>
+        <xs:attribute type="xs:byte" name="mid"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="fkkType">
+    <xs:sequence>
+      <xs:element type="fkType" name="fk"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="nyilvantartasType">
+    <xs:sequence>
+      <xs:element type="filmekType" name="filmek"/>
+      <xs:element type="kategoriakType" name="kategoriak"/>
+      <xs:element type="mozikType" name="mozik"/>
+      <xs:element type="termekType" name="termek"/>
+      <xs:element type="dolgozokType" name="dolgozok"/>
+      <xs:element type="vetitesekType" name="vetitesek"/>
+      <xs:element type="fkkType" name="fkk"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

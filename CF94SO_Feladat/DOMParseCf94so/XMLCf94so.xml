@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nyilvantartas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaCf94so.xsd">
+	<filmek>
+		<film fid="0">
+			<hossz>120 perc</hossz>
+			<cim>Terminator</cim>
+		</film>
+	</filmek>
+	<kategoriak>
+		<kategoria kid="0">
+			<nev>Akcio</nev>
+		</kategoria>
+	</kategoriak>
+	<mozik>
+		<mozi mid="0">
+			<varos>Miskolc</varos>
+			<nev>A Mozi</nev>
+		</mozi>
+	</mozik>
+	<termek>
+		<terem tid="0" mid="0">
+			<szam>1</szam>
+		</terem>
+	</termek>
+	<dolgozok>
+		<dolgozo did="0" mid="0">
+			<nev>Erdei Botond</nev>
+			<telefonszamok>
+				<telefonszam did="0">
+					<szam>06122342342</szam>
+				</telefonszam>
+			</telefonszamok>
+			<cim>
+				<irsz>1234</irsz>
+				<uhsz>Rozsa utca 1.</uhsz>
+				<varos>Miskolc</varos>
+			</cim>
+		</dolgozo>
+	</dolgozok>
+	<vetitesek>
+		<vetites fid="0" mid="0">
+			<tol>13:00</tol>
+			<ig>14:20</ig>
+		</vetites>
+	</vetitesek>
+	<fkk>
+		<fk fid="0" mid="0"></fk>
+	</fkk>
+
+</nyilvantartas>
