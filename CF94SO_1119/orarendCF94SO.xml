@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="orarendCF94SO.xsl" type="text/xsl"?>
+<orarend>
+
+	<ora id="1" tipus = "eloadas">
+		<targy>Mesterseges intelligencia alapok</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>12</tol>
+			<ig>15</ig>
+		</idopont>
+		<helyszin>III.</helyszin>
+		<oktato>Dr. Dudas Laszlo</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+	
+	<ora id="2" tipus = "eloadas">
+		<targy>Linearis algebra numerikus modszerei</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>XXX.</helyszin>
+		<oktato>Dr. Karacsony Zsolt</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+	
+	<ora id="3" tipus = "gyakorlat">
+		<targy>Linearis algebra numerikus modszerei</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>201.</helyszin>
+		<oktato>Dr. Karacsony Zsolt</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+	
+	<ora id="4" tipus = "eloadas">
+		<targy>Adatkezeles XML-be</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>XXXVII.</helyszin>
+		<oktato>Bednarik Laszlo</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+
+	<ora id="5" tipus = "gyakorlat">
+		<targy>Mesterseges intelligencia alapok</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10</tol>
+			<ig>11</ig>
+		</idopont>
+		<helyszin>Ln 2.</helyszin>
+		<oktato>Dr. Dudas Laszlo</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+
+	<ora id="6" tipus = "eloadas">
+		<targy>Vállalati</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>16</tol>
+			<ig>20</ig>
+		</idopont>
+		<helyszin>Ln 202.</helyszin>
+		<oktato>Dr. Sasvari Peter Laszlo</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>
+	
+	<ora id="7" tipus = "eloadas">
+		<targy>Valoszinuseg-szamitas</targy>
+		<idopont>
+			<nap>Csutortok</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>X.</helyszin>
+		<oktato>Dr. Fegyverneki Sandor</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>	
+
+	<ora id="8" tipus = "gyakorlat">
+		<targy>Adatkezeles XML-be</targy>
+		<idopont>
+			<nap>Csutortok</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>Ln 103.</helyszin>
+		<oktato>Bednarik Laszlo</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>	
+	
+	<ora id="9" tipus = "gyakorlat">
+		<targy>Valoszinuseg-szamitas</targy>
+		<idopont>
+			<nap>Csutortok</nap>
+			<tol>14</tol>
+			<ig>16</ig>
+		</idopont>
+		<helyszin>14.</helyszin>
+		<oktato>Dr. Glavosits Tamas</oktato>
+		<szak>Programtervezo informatikus</szak>
+	</ora>	
+	
+	
+	
+</orarend>
