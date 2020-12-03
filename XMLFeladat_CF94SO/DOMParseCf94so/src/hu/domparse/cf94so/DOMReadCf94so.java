@@ -14,15 +14,17 @@ public class DOMReadCf94so {
 	public static void main(String[] args) {
 
 		try {
+			//Document builder meghívása
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dbBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dbBuilder.parse("XMLCf94so.xml");
-
+			
+			//Root normalizálása
 			Element root = doc.getDocumentElement();
 			root.normalize();
 
 			print(root);
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -30,17 +32,20 @@ public class DOMReadCf94so {
 
 	public static void print(Node root) {
 
-		String nodename = root.getNodeName();
-		if (!nodename.contains("text")) {
-			System.out.println(nodename);
+		//Node nevének kiírása
+		if (root.getNodeName() != "#text") {
+			System.out.println(root.getNodeName());
 		}
-
+		
+		//Gyerekek Node listába helyezése
 		NodeList children = root.getChildNodes();
 
+		
 		for (int i = 0; i < children.getLength(); i++) {
 			Node child = children.item(i);
 			boolean isComplex = child.getTextContent().contains("\n");
 
+			//Attribute kiírása
 			if (child.hasAttributes()) {
 				NamedNodeMap attributes = child.getAttributes();
 				int numAttrs = attributes.getLength();
@@ -53,7 +58,8 @@ public class DOMReadCf94so {
 					System.out.println(" " + attrName + " : " + attrValue);
 				}
 			}
-
+			
+			//Név és tartalom kíírása
 			if (isComplex) {
 				print(child);
 			} else {

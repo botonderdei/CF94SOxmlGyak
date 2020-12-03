@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<nyilvantartas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaCf94so.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><nyilvantartas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaCf94so.xsd">
 	<filmek>
 		<film fid="0">
-			<hossz>120 perc</hossz>
+			<hossz>111 perc</hossz>
 			<cim>Terminator</cim>
 		</film>
 	</filmek>
@@ -19,7 +17,7 @@
 		</mozi>
 	</mozik>
 	<termek>
-		<terem tid="0" mid="0">
+		<terem mid="0" tid="0">
 			<szam>1</szam>
 		</terem>
 	</termek>
@@ -45,7 +43,7 @@
 		</vetites>
 	</vetitesek>
 	<fkk>
-		<fk fid="0" mid="0"></fk>
+		<fk fid="0" mid="0"/>
 	</fkk>
 
 </nyilvantartas>
