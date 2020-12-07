@@ -4,11 +4,9 @@
     <xsl:template match="/">
         <html>
             <body>
-                <xsl:for-each select="/autok">
-                	<xsl:if test="auto/tulaj/varos[Value='Miskolc']">
-                    	<p><xsl:value-of select="@rsz"/></p>
-                	</xsl:if>
-                </xsl:for-each>
+        		<xsl:for-each select="//auto[tulaj/varos/text()='Miskolc']">
+           			<xsl:value-of select="@rsz"/>
+        		</xsl:for-each>
             </body>
         </html>
     </xsl:template>    
